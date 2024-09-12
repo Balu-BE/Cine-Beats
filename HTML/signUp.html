@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Cine Beats</title>
+    <link rel="stylesheet" href="/CSS/signUp.css">
+    <script src="/JS/signup-validation.js"></script>
+    <style>
+        p{
+            color: red;
+            font-size: 14px;
+            text-align: left;
+            margin: -5px 0 -5px 0;
+            padding: 0px;
+        }
+        #error{
+            text-align: center;
+        }
+        #page-nav{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="signup-container">
+        <div class="signup-header">
+            <img src="/MEDIA/IMAGES/LOGOS/app-logo.png" alt="Cine Beats Logo" class="logo">
+            <h2>Sign up for Cine Beats</h2>
+        </div>
+        <form class="signup-form">
+            <!-- <label for="first-name"> Name</label> -->
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            <p id="err1"></p>
+            <!-- <label for="email">Email</label> -->
+            <input type="text" id="email" name="email" placeholder="Enter your email address">
+            <p id="err2"></p>
+            <!-- <label for="phone">P <p id="error1"></p>hone Number</label> -->
+            <input type="text" id="phone" name="phone" placeholder="Enter your phone number">
+            <p id="err3"></p>
+            <!-- <label for="password">Password</label> -->
+            <input type="text" id="password" name="password" placeholder="Password">
+            <p id="err4"></p>
+            <!-- <label for="confirm-password">Confirm Password</label> -->
+            <input type="text" id="confirm-password" name="confirm-password" placeholder="Confirm Password">
+            <p id="err5"></p>
+            <p id="error"></p>
+            <button class="signup-button" onclick="signupValidation(event)">Sign Up</button>
+        </form>
+        <div class="login-link">
+            <p id="page-nav">Already have an account? <a href="/index.html">Log in</a>.</p>
+        </div>
+    </div>
+</body>
+
+</html>

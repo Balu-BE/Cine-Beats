@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cine Beats - Music App</title>
+    <link rel="stylesheet" href="/CSS/music-home.css">
+    <link rel="stylesheet" href="/CSS/slider.css">
+    <link rel="stylesheet" href="/CSS/search-bar.css">
+    <script src="/JS/language.js"></script>
+</head>
+
+<body>
+    <div class="top-bar">
+        <div class="navigation">
+            <div class="app-logo">
+                <a href="/HTML/home.html">
+                     <!-- SVG Arrow Icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
+                <path
+                    d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z" />
+            </svg>
+                </a>
+            
+                <img src="/MEDIA/IMAGES/LOGOS/app-logo.png" alt="App Logo">
+                <span>Cine Beats</span>
+            </div>
+        </div>
+        <div class="search-bar-container">
+            <div class="dropdown-search-container">
+                <select class="dropdown" onchange="language()" id="lang-choice">
+                    <option value="telugu">Telugu</option>
+                    <option value="malayalam">Malayalam</option>
+                    <option value="tamil">Tamil</option>
+                </select>
+                 <input type="text" class="search-bar" placeholder="Search Movies, shows and more">
+                <button class="search-button">Search</button>
+            </div>
+        </div>
+        <a href="/HTML/MUSIC/music-home.html"> <button class="watch-movies-btn">Listen Music</button>
+        </a>
+       </div>
+      
+    <div class="side-nav">
+        <h1>Telugu Movies</h1>
+        <div class="nav-item"><a href="/HTML/home.html">Home</a></div>
+        <div class="nav-item"><a href="#new-release-movies">New Release Movies</a></div>
+        <div class="nav-item"><a href="#action-drama-comedy">Action/Drama/Comedy</a></div>
+        <div class="nav-item"><a href="#actor-actress-movies">Actor/Actress Movies</a></div>
+        <div class="nav-item"><a href="#director-movies">Director's Movies</a></div>
+    </div>
+
+        
+    <div class="main-content">
+        <section>
+            <div class="slider">
+                <div class="slider-inner">
+                    <div class="slide"><img src="/MEDIA/IMAGES/MOVIE IMAGES/TELUGU/slider-images/slide1.jpg" alt="Image 1"></div>
+                    <div class="slide"><img src="/MEDIA/IMAGES/MOVIE IMAGES/TELUGU/slider-images/slide2.jpg" alt="Image 2"></div>
+                    <div class="slide"><img src="/MEDIA/IMAGES/MOVIE IMAGES/TELUGU/slider-images/slide3.jpg" alt="Image 3"></div>
+                    <div class="slide"><img src="/MEDIA/IMAGES/MOVIE IMAGES/TELUGU/slider-images/rrr.jpg" alt="Image 4"></div>
+                    <div class="slide"><img src="/MEDIA/IMAGES/MOVIE IMAGES/TELUGU/slider-images/slide2.jpg" alt="Image 5"></div>
+                    <div class="slide"><img src="/MEDIA/IMAGES/MOVIE IMAGES/TELUGU/slider-images/slide3.jpg" alt="Image 6"></div>
+                    <div class="slide"><img src="/MEDIA/IMAGES/MOVIE IMAGES/TELUGU/slider-images/slide1.jpg" alt="Image 7"></div>
+                    <div class="slide"><img src="/MEDIA/IMAGES/MOVIE IMAGES/TELUGU/slider-images/slide2.jpg" alt="Image 8"></div>
+                </div>
+            </div>
+        
+        </section>
+        
+        <section id="new-release-movies"></section>
+              <!-- New Release Movies Heading -->
+        <h2 class="heading">NEW RELEASE MOVIES</h2>
+
+        <!-- First Row of Movies -->
+        <div class="movie-row">
+            <div class="movie">
+                <a href="bhima.html">
+                    <img src="/MEDIA/IMAGES/MOVIE IMAGES/TELUGU/NEW RELEASES/Bhimaa.jpg" alt="Movie 1">
+                </a>
+                <p>BHIMAA</p>
+            </div>
+            <div class="movie">
+                <a href="familystar.html">
+                    <img src="/MEDIA/IMAGES/MOVIE IMAGES/TELUGU/NEW RELEASES/Family_Star.png" alt="Movie 2">
+                </a>
+                <p>FAMILY STAR</p>
+            </div>
+            <div class="movie">
+                <a href="krishnamma.html">
+                    <img src="/MEDIA/IMAGES/MOVIE IMAGES/TELUGU/NEW RELEASES/Krishnamma.jpg" alt="Movie 3">
+                </a>
+                <p>KRISHNAMMA</p>
+            </div>
+            <div class="movie">
+                <a href="/HTML/MOVIES/malayalam/premalu.html">
+                    <img src="/MEDIA/IMAGES/MOVIE IMAGES/TELUGU/NEW RELEASES/Premalu.jpg" alt="Movie 3">
+                </a>
+                <p>PREMALU</p>
+            </div>
+            <div class="movie">
+                <a href="rathnam.html">
+                    <img src="/MEDIA/IMAGES/MOVIE IMAGES/TELUGU/NEW RELEASES/Rathnam.jpg" alt="Movie 3">
+                </a>
+                <p>RATHNAM</p>
+            </div>
+        </div>
+
+    </section>
+        
+        <section id="action-drama-comedy">
+        <!-- New Release Movies Heading (Second Row) -->
+        <h2 class="heading">ACTION / DRAMA / COMEDY</h2>
+
+        <!-- Second Row of Movies -->
+        <div class="movie-row">
+            <div class="movie">
+                <a href="bhahubali.html">
+                    <img src="/MEDIA/IMAGES/MOVIE IMAGES/TELUGU/action drama/Baahubali.jpg" alt="Movie 4">
+                </a>
+                <p>BAAHUBALI</p>
+            </div>
+            <div class="movie">
+                <a href="businessman.html">
+                    <img src="/MEDIA/IMAGES/MOVIE IMAGES/TELUGU/action drama/Businessman.jpg" alt="Movie 5">
+                </a>
+                <p>BUSINESSMAN</p>
+            </div>
+            <div class="movie">
+                <a href="jersey.html">
+                    <img src="/MEDIA/IMAGES/MOVIE IMAGES/TELUGU/action drama/Jersey.jpg" alt="Movie 6">
+                </a>
+                <p>JERSEY</p>
+            </div>
+            <div class="movie">
+                <a href="kushi.html">
+                    <img src="/MEDIA/IMAGES/MOVIE IMAGES/TELUGU/action drama/Kushi.jpg" alt="Movie 3">
+                </a>
+                <p>KUSHI</p>
+            </div>
+            <div class="movie">
+                <a href="rrr.html">
+                    <img src="/MEDIA/IMAGES/MOVIE IMAGES/TELUGU/action drama/RRR.jpg" alt="Movie 3">
+                </a>
+                <p>RRR</p>
+            </div>
+        </div>
+    </section>
+    <section id="actor-actress-movies">
+        <!-- New Release Movies Heading (Second Row) -->
+        <h2 class="heading">ACTOR / ACTRESS MOVIES</h2>
+
+        <!-- Third Row of Movies -->
+        <div class="movie-row">
+            <div class="movie">
+                <a href="pawan.html">
+                    <img src="/MEDIA/IMAGES/MOVIE IMAGES/TELUGU/actors/bhawankalyan/Pawan_Kalyan.jpg" alt="Movie 4">
+                </a>
+                <p>PAWAN KALYAN</p>
+            </div>
+            <div class="movie">
+                <a href="mahesh.html">
+                    <img src="/MEDIA/IMAGES/MOVIE IMAGES/TELUGU/actors/maheshbabu/Mahesh_Babu.jpg" alt="Movie 5">
+                </a>
+                <p>MAHESH BABU</p>
+            </div>
+            <div class="movie">
+                <a href="naani.html">
+                    <img src="/MEDIA/IMAGES/MOVIE IMAGES/TELUGU/actors/naani/naani.png" alt="Movie 6">
+                </a>
+                <p>NAANI</p>
+            </div>
+            <div class="movie">
+                <a href="prabhas.html">
+                    <img src="/MEDIA/IMAGES/MOVIE IMAGES/TELUGU/actors/prabhas/Prabhas.jpg" alt="Movie 3">
+                </a>
+                <p>PRABHAS</p>
+            </div>
+            <div class="movie">
+                <a href="ramcharan.html">
+                    <img src="/MEDIA/IMAGES/MOVIE IMAGES/TELUGU/actors/ramcharan/Ram_Charan.jpg" alt="Movie 3">
+                </a>
+                <p>RAM CHARAN</p>
+            </div>
+        </div>
+    </section>
+    <section id="director-movies">
+        <!-- New Release Movies Heading (Second Row) -->
+        <h2 class="heading">DIRECTOR'S MOVIES</h2>
+        <!-- Fourth Row Movies -->
+        <div class="movie-row">
+            <div class="movie">
+                <a href="anil.html">
+                    <img src="/MEDIA/IMAGES/MOVIE IMAGES/TELUGU/DIRECTORS/anilravipudi/anil-ravipudi.jpg" alt="Movie 4">
+                </a>
+                <p>ANIL RAVIPUDI</p>
+            </div>
+            <div class="movie">
+                <a href="ashok.html">
+                    <img src="/MEDIA/IMAGES/MOVIE IMAGES/TELUGU/DIRECTORS/g.ashok/g-ashok.jpg" alt="Movie 5">
+                </a>
+                <p>G ASHOK</p>
+            </div>
+            <div class="movie">
+                <a href="viswanath.html">
+                    <img src="/MEDIA/IMAGES/MOVIE IMAGES/TELUGU/DIRECTORS/k.viswanath/K._Vishwanath.jpg" alt="Movie 6">
+                </a>
+                <p>K VISHWANATH</p>
+            </div>
+            <div class="movie">
+                <a href="puri.html">
+                    <img src="/MEDIA/IMAGES/MOVIE IMAGES/TELUGU/DIRECTORS/purijagannadh/Puri_Jagannadh.jpg" alt="Movie 3">
+                </a>
+                <p>PURI JAGANNADH</p>
+            </div>
+            <div class="movie">
+                <a href="rajamouli.html">
+                    <img src="/MEDIA/IMAGES/MOVIE IMAGES/TELUGU/DIRECTORS/RAJAMOULI/SS_Rajamouli.jpg" alt="Movie 3">
+                </a>
+                <p>SS RAJAMOULI</p>
+            </div>
+        </div>
+        </section>
+        
+    </div>
+</body>
+
+</html>

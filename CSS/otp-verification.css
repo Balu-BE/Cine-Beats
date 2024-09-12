@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.otp-container {
+    background-color: #282828;
+    border-radius: 10px;
+    padding: 30px;
+    width: 90vh;
+    max-width: 360px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.6);
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.otp-header .logo {
+    width: 100px;
+    margin-bottom: 15px;
+}
+
+.otp-header h2 {
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+
+.otp-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.otp-form label {
+    text-align: left;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.otp-form input {
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #b3b3b3;
+    background-color: #333333;
+    color: white;
+    font-size: 14px;
+    box-sizing: border-box;
+    text-align: center;
+    letter-spacing: 10px;
+    font-size: 18px;
+}
+
+.otp-button {
+    background-color: #1DB954;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.otp-button:hover {
+    background-color: #1ed760;
+}
+
+.resend-link {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #b3b3b3;
+}
+
+.resend-link a {
+    color: #1DB954;
+    text-decoration: none;
+}
+
+.resend-link a:hover {
+    text-decoration: underline;
+}

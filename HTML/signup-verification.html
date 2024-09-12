@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Verification - Cine Beats</title>
+    <link rel="stylesheet" href="/CSS/sent-otp.css">
+    <script src="/JS/sent-otp.js"></script>
+    <style>
+        #error{
+            color: red;
+            font-size: 14px;
+            margin:0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="forgot-password-container">
+        <div class="forgot-password-header">
+            <img src="/MEDIA/IMAGES/LOGOS/app-logo.png" alt="Cine Beats Logo" class="logo">
+            <h2>SignUp Verification</h2>
+
+        </div>
+
+        <form class="forgot-password-form">
+            <label for="contact-info">Email or Phone Number</label>
+            <input type="text" id="contact-info" name="contact-info" placeholder="Enter your email or phone number">
+            <p id="error"></p>
+            <button type="submit" class="send-otp-button" onclick="sentOtp(event)">Send OTP</button>
+        </form>
+
+        <div class="back-link">
+            <p><a href="/index.html">Back to login</a>.</p>
+        </div>
+    </div>
+    
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Login</title>
+    <link rel="stylesheet" href="/CSS/index.css">
+    <script src="/JS/login-validation.js"></script>
+    <style>
+        #error{
+            color: red;
+            font-size: 14px;
+            margin-top: -5px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-header">
+            <img src="/MEDIA/IMAGES/LOGOS/app-logo.png" alt="Spotify Logo">
+        </div>
+        <div class="login-form">
+            <h2>Log in to Cine Beats</h2>
+            <form>
+                <input type="email" placeholder="Email address or username" id="mail">
+                <input type="password" placeholder="Password" id="pass">
+                <p id="error"></p>
+                <a href="/HTML/home.html"><button type="submit" onclick="login(event)">Log In</button></a>
+            </form>
+            <div class="login-options">
+                <a href="/HTML/sent-otp.html">Forgot your password?</a>
+                <span>Don't have an account? <a href="/HTML/signUp.html">Sign up for Cine Beats</a></span>
+            </div>
+            
+        
+        </div>
+    </div>
+</body>
+</html>

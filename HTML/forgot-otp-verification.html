@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP Verification - Cine Beats</title>
+    <link rel="stylesheet" href="/CSS/otp-verification.css">
+    <!-- <script src="/JS/otp-validation.js"></script> -->
+    <style>
+        #error{
+            color: red;
+            font-size: 14px;
+            margin:0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="otp-container">
+        <div class="otp-header">
+            <img src="/MEDIA/IMAGES/LOGOS/app-logo.png" alt="Cine Beats Logo" class="logo">
+            <h2>OTP Verification</h2>
+        </div>
+        <form class="otp-form">
+            <label for="otp">Enter the OTP sent to your email</label>
+            <input type="text" id="otp" name="otp" maxlength="6" placeholder="------">
+            <p id="error"></p>
+            <button type="submit" class="otp-button" onclick="otpVerification(event)">Verify OTP</button>
+        </form>
+       
+        <div class="resend-link">
+            <p>Didn't receive the OTP? <a href="/HTML/otp-verification.html">Resend OTP</a>.</p>
+        </div>
+    </div>
+    <script>
+         var Otp = Math.floor(Math.random()*999999);
+        alert(Otp);
+        function otpVerification(event){
+        event.preventDefault();
+
+        var enteredOtp = document.getElementById("otp").value;
+        if(Otp == enteredOtp){
+            alert("Verified...")
+            window.location.href = "/HTML/change password.html";
+        }
+        else{
+            document.getElementById("error").innerHTML = "Incorrect OTP entered. Please try again";
+        }
+        } 
+
+    </script>
+</body>
+
+</html>

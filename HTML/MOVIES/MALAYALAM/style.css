@@ -1,0 +1,228 @@
+body {
+    font-family: Arial, sans-serif;;
+    margin: 0;
+    padding: 0;
+    background-color: #1b1b1b;
+    color: #ffffff;
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Left-side Navigation Bar */
+nav {
+    width: 250px;
+    background-color: #1f1f1f;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1000;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 15px 20px;
+    width: 80%;
+    text-align: left;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
+}
+
+nav a:hover {
+    background-color: #303030;
+
+}
+
+/* Main content section */
+main {
+    margin-left: 250px;
+    padding: 20px;
+    width: calc(100% - 220px);
+}
+
+header {
+    background-color: transparent;
+    padding: 20px;
+    text-align: center;
+}
+
+.app-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    font-weight: 700;
+    color:  #1DB954;
+    margin-bottom: 20px;
+}
+
+.app-name img {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.search-bar select,
+.search-bar input,
+.search-bar button {
+    padding: 12px;
+    border-radius: 20px;
+    border: none;
+    margin: 0 5px;
+    outline: none;
+}
+
+.search-bar select {
+    background-color: #303030;
+    color: #ffffff;
+}
+
+.search-bar input {
+    background-color: #2b2b2b;
+    color: #ffffff;
+    width: 50%;
+    max-width: 500px;
+}
+
+.search-bar button {
+    background-color: #1DB954;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-bar button:hover {
+    background-color: #1DB954;
+}
+
+/* Slider */
+.slider {
+    width: 90%;
+    overflow: hidden;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    height: 500px; /* Set the desired height for the slider */
+}
+
+.slider-container {
+    display: flex;
+    width: 300%;
+    animation: slide 15s infinite;
+    height: 100%; /* Ensure the container takes up the full height */
+}
+
+.slide {
+    width: 33.33%;
+    height: 100%; /* Ensure each slide takes up the full height */
+}
+
+.slide img {
+    width: 100%;
+    height: 100%; /* Set the image height to fill the slide */
+    object-fit: cover; /* Adjusts the image to cover the entire slide area */
+    border-radius: 10px;
+}
+
+
+/* Keyframes for slider animation */
+@keyframes slide {
+    0% { transform: translateX(0%); }
+    20% { transform: translateX(0%); }
+    25% { transform: translateX(-33.33%); }
+    45% { transform: translateX(-33.33%); }
+    50% { transform: translateX(-66.66%); }
+    70% { transform: translateX(-66.66%); }
+    75% { transform: translateX(0%); }
+    100% { transform: translateX(0%); }
+}
+
+.heading {
+    font-size: 24px;
+    margin: 40px 0 20px;
+    text-align: left;
+    width: 100%;
+    padding-left: 10px;
+    color: #1DB954;
+}
+
+.movie-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap: 15px;
+}
+
+.movie {
+    flex: 1;
+    background-color: #2b2b2b;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.movie img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 2 / 3;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.movie p {
+    margin: 10px 0 0;
+    font-weight: bold;
+}
+
+.movie:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    nav {
+        width: 100%;
+        height: auto;
+        position: relative;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    main {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .movie-row {
+        flex-direction: column;
+    }
+
+    .movie {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .slider {
+        width: 100%;
+    }
+
+    .slide {
+        width: 100%;
+    }
+}
